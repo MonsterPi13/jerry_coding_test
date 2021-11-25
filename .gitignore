@@ -16,7 +16,7 @@ pnpm-debug.log*
 *.sw?
 
 # Generate files
-reporter
+report
 dist
 
 # Chores
