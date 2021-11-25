@@ -26,7 +26,7 @@ class RangeList {
    */
   private isValidRangeFormat(range: number[]): validInfo {
     if (range.length !== 2) {
-       return  {
+      return {
         isValid: false,
         errorMessage: `Range's length must be 2!`,
       };
@@ -178,4 +178,3 @@ rl.print();
 
 rl.remove([3, 19]);
 rl.print();
-
