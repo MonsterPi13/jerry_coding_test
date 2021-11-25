@@ -22,7 +22,7 @@ class RangeList {
   /**
    * Check range value is valid
    * @param {Array<number>} range - Array of two integers that specify beginning and end of range.
-   * @returns {boolean} - true: valid false: inValid
+   * @returns {validInfo}
    */
   private isValidRangeFormat(range: number[]): validInfo {
     if (range.length !== 2) {
