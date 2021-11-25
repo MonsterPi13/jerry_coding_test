@@ -1,0 +1,21 @@
+{
+  "name": "jerry_coding_test",
+  "scripts": {
+    "start:tsc": "npx tsc  -w",
+    "start:nodemon": "npx nodemon ./dist/RangeList.js",
+    "test": "jest"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/jest": "^27.0.3",
+    "babel-jest": "^27.3.1",
+    "jest": "^27.3.1",
+    "nodemon": "^2.0.15",
+    "typescript": "^4.5.2"
+  }
+}
