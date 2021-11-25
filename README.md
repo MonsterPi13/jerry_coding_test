@@ -1,6 +1,9 @@
 # Jerry_coding_test
+
 ---
+
 ## Usage
+
 **Required: Node.js environment.**
 
 ```shell
@@ -10,15 +13,19 @@
 ```
 
 **Run jest for test result**
+
 ```shell
 yarn|npm run test
 ```
+
 ---
+
 ## Ideas
 
 1. Storage data structure
-	- Two-dimensional array
-	- Define an private varibale called rangeList to store rangeList in class
+
+   - Two-dimensional array
+   - Define a private variable called rangeList to store rangeList in class
 
 2. Add Function
    1. Each time, when a value want to insert into rangeList, For loop rangeList, compare currnet inserted value with current value in loop, define temporary variable called newRangeList to store refactored rangeList, at last newRangeList assigin to rangeList.
@@ -26,6 +33,7 @@ yarn|npm run test
    3. Secondly, deal with inserted range with current value don't have common part, using `rangeEnd < currentRangeStart` to judge, For loop the value after currentRange and insert into newRangeList.
    4. Thirdly, deal with old rangeList, when `rangeStart > currentRangeEnd`, insert current range into newRangeList.
    5. Lastly, deal with current range and inserted range have common part. Redefine rangeStart and rangeEnd with maximum range.
+
 ```JS
 let rangeStart: number = range[0];
 let rangeEnd: number = range[1];
@@ -72,6 +80,7 @@ this.rangeList = newRangeList;
 3. Remove Function:
    1. Like Add function, loop rangeList, first deal with uneffected range, using `rangeEnd <= currentRangeStart || rangeStart >= currentRangeEnd` to judge, insert currentRange into newRangeList.
    2. Then deal with effected range value. Calculate difference rangeList between inserted range and currentRange.
+
 ```JS
 let rangeStart: number = range[0];
 let rangeEnd: number = range[1];
@@ -97,7 +106,8 @@ this.rangeList = newRangeList;
 ```
 
 4. Print Function
-	1. For loop rangeList, and convert array into string with required format. 
+   1. For loop rangeList, and convert array into string with required format.
+
 ```JS
 let result = "";
 this.rangeList.forEach((range) => {
