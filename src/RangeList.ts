@@ -117,7 +117,7 @@ class RangeList {
       const currentRangeStart = currentRange[0];
       const currentRangeEnd = currentRange[1];
 
-      // Like Add funcion, first deal with uneffect range
+      // Like Add funcion, first deal with uneffected range
       if (rangeEnd <= currentRangeStart || rangeStart >= currentRangeEnd) {
         newRangeList.push(currentRange);
       } else {
