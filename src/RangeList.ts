@@ -11,7 +11,7 @@
  *
  */
 
-interface validInfo {
+interface ValidInfo {
   isValid: Boolean;
   errorMessage?: String;
 }
@@ -24,7 +24,7 @@ class RangeList {
    * @param {Array<number>} range - Array of two integers that specify beginning and end of range.
    * @returns {validInfo}
    */
-  private isValidRangeFormat(range: number[]): validInfo {
+  private isValidRangeFormat(range: number[]): ValidInfo {
     if (range.length !== 2) {
       return {
         isValid: false,
