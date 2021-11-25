@@ -33,14 +33,14 @@ describe("RangeList's remove function test", () => {
     }
   });
 
-  it("Result should return `[1, 8) [10, 21]` when removed range is `[10, 10]", () => {
+  it("Result should return `[1, 8) [10, 21)` when removed range is `[10, 10]", () => {
     rl.remove([10, 10]);
     const result = rl.print();
 
     expect(result).toEqual("[1, 8) [10, 21)");
   });
 
-  it("Result should return `[1, 8) [11, 21]` when removed range is `[10, 11]", () => {
+  it("Result should return `[1, 8) [11, 21)` when removed range is `[10, 11]", () => {
     rl.remove([10, 11]);
     const result = rl.print();
 
